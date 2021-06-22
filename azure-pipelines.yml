@@ -20,7 +20,6 @@ steps:
     command: 'build'
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
-  steps:
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
