@@ -1,7 +1,5 @@
-# Build ASP.NET Core project using Azure Pipelines
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
+
+
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=vsts
 
 pool:
@@ -22,3 +20,6 @@ steps:
     testResultsFiles: '**/*.trx'
 
 - task: PublishBuildArtifacts@1
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
